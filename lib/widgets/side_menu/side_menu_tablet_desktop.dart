@@ -1,5 +1,5 @@
 import 'package:ecommerce_admin_tut/locator.dart';
-import 'package:ecommerce_admin_tut/pages/categories/categories_page.dart';
+import 'package:ecommerce_admin_tut/pages/jobs/jobs_page.dart';
 import 'package:ecommerce_admin_tut/provider/app_provider.dart';
 import 'package:ecommerce_admin_tut/rounting/route_names.dart';
 import 'package:ecommerce_admin_tut/services/navigation_service.dart';
@@ -14,12 +14,9 @@ class SideMenuTabletDesktop extends StatelessWidget {
     final AppProvider appProvider = Provider.of<AppProvider>(context);
     return Container(
       decoration: BoxDecoration(
-        color: Colors.indigo,
+          color: Colors.indigo,
           gradient: LinearGradient(
-            colors: [
-              Colors.indigo,
-              Colors.indigo.shade600
-            ],
+            colors: [Colors.indigo, Colors.indigo.shade600],
           ),
           boxShadow: [
             BoxShadow(
@@ -30,7 +27,6 @@ class SideMenuTabletDesktop extends StatelessWidget {
         child: Column(
           children: [
             NavBarLogo(),
-
             SideMenuItemDesktop(
               icon: Icons.dashboard,
               text: 'Dashboard',
@@ -40,60 +36,61 @@ class SideMenuTabletDesktop extends StatelessWidget {
                 locator<NavigationService>().navigateTo(HomeRoute);
               },
             ),
-
             SideMenuItemDesktop(
               icon: Icons.people,
               text: 'Users',
               active: appProvider.currentPage == DisplayedPage.USERS,
-
               onTap: () {
                 appProvider.changeCurrentPage(DisplayedPage.USERS);
 
                 locator<NavigationService>().navigateTo(UsersRoute);
               },
             ),
-
             SideMenuItemDesktop(
-              icon: Icons.shopping_cart,
-              text: 'Orders',
-              active: appProvider.currentPage == DisplayedPage.ORDERS,
-
+              icon: Icons.event,
+              text: 'Event List',
+              active: appProvider.currentPage == DisplayedPage.EVENTS,
               onTap: () {
-                appProvider.changeCurrentPage(DisplayedPage.ORDERS);
-                locator<NavigationService>().navigateTo(OrdersRoute);
+                appProvider.changeCurrentPage(DisplayedPage.EVENTS);
+                locator<NavigationService>().navigateTo(EventsRoute);
               },
             ),
-
             SideMenuItemDesktop(
-              icon: Icons.shopping_basket_outlined,
-              text: 'Products',
-              active: appProvider.currentPage == DisplayedPage.PRODUCTS,
+              icon: Icons.local_activity,
+              text: 'Activities',
+              active: appProvider.currentPage == DisplayedPage.ACTIVITIES,
               onTap: () {
-                appProvider.changeCurrentPage(DisplayedPage.PRODUCTS);
-                locator<NavigationService>().navigateTo(ProductsRoute);
+                appProvider.changeCurrentPage(DisplayedPage.ACTIVITIES);
+                locator<NavigationService>().navigateTo(ActivitiesRoute);
               },
             ),
-
             SideMenuItemDesktop(
-              icon: Icons.category,
-              text: 'Categories',
-              active: appProvider.currentPage == DisplayedPage.CATEGORIES,
+              icon: Icons.book,
+              text: 'Job List',
+              active: appProvider.currentPage == DisplayedPage.JOBS,
               onTap: () {
-                appProvider.changeCurrentPage(DisplayedPage.CATEGORIES);
-                locator<NavigationService>().navigateTo(CategoriesRoute);
+                appProvider.changeCurrentPage(DisplayedPage.JOBS);
+                locator<NavigationService>().navigateTo(JobsRoute);
               },
             ),
-
             SideMenuItemDesktop(
-              icon: Icons.category,
-              text: 'Brands',
-              active: appProvider.currentPage == DisplayedPage.BRANDS,
+              icon: Icons.school,
+              text: 'Class List',
+              active: appProvider.currentPage == DisplayedPage.CLASSLISTS,
               onTap: () {
-                appProvider.changeCurrentPage(DisplayedPage.BRANDS);
-                locator<NavigationService>().navigateTo(BrandsRoute);
+                appProvider.changeCurrentPage(DisplayedPage.CLASSLISTS);
+                locator<NavigationService>().navigateTo(ClassListsRoute);
               },
             ),
-
+            SideMenuItemDesktop(
+              icon: Icons.payment,
+              text: 'Payment Account',
+              active: appProvider.currentPage == DisplayedPage.PAYMENTS,
+              onTap: () {
+                appProvider.changeCurrentPage(DisplayedPage.PAYMENTS);
+                locator<NavigationService>().navigateTo(PaymentsRoute);
+              },
+            ),
           ],
         ),
       ),

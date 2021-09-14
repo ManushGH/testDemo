@@ -13,13 +13,10 @@ import 'locator.dart';
 
 void main() {
   setupLocator();
-  runApp(MultiProvider(
-      providers: [
-        ChangeNotifierProvider.value(value: AppProvider.init()),
-        ChangeNotifierProvider.value(value: AuthProvider.initialize()),
-
-      ],
-      child: MyApp()));
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider.value(value: AppProvider.init()),
+    ChangeNotifierProvider.value(value: AuthProvider.initialize()),
+  ], child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -28,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Admin Panel GoNexus',
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
@@ -84,5 +81,3 @@ class AppPagesController extends StatelessWidget {
     );
   }
 }
-
-

@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class OrderModel {
+class EventsModel {
   static const ID = "id";
   static const DESCRIPTION = "description";
   static const CART = "cart";
@@ -32,7 +32,7 @@ class OrderModel {
   // public variable
   List cart;
 
-  OrderModel.fromSnapshot(DocumentSnapshot snapshot) {
+  EventsModel.fromSnapshot(DocumentSnapshot snapshot) {
     _id = snapshot.data()[ID];
     _description = snapshot.data()[DESCRIPTION];
     _total = snapshot.data()[TOTAL];

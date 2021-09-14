@@ -1,10 +1,11 @@
 const String HomeRoute = "home";
 const String LayoutRoute = "layout";
-const String ProductsRoute = "products";
+const String ActivitiesRoute = "activities";
 const String UsersRoute = "users";
-const String OrdersRoute = "orders";
+const String EventsRoute = "events";
 const String LoginRoute = "login";
 const String RegistrationRoute = "registration";
-const String CategoriesRoute = "categories";
-const String BrandsRoute = "brands";
+const String JobsRoute = "jobs";
+const String ClassListsRoute = "class";
+const String PaymentsRoute = "payments2";
 const String PageControllerRoute = "page";

@@ -1,14 +1,14 @@
-
 import 'package:ecommerce_admin_tut/main.dart';
-import 'package:ecommerce_admin_tut/pages/brands/brands_page.dart';
-import 'package:ecommerce_admin_tut/pages/categories/categories_page.dart';
+import 'package:ecommerce_admin_tut/pages/classLists/classLists_page.dart';
+import 'package:ecommerce_admin_tut/pages/payments/payments_page.dart';
+import 'package:ecommerce_admin_tut/pages/jobs/jobs_page.dart';
 import 'package:ecommerce_admin_tut/pages/login/login.dart';
 import 'package:ecommerce_admin_tut/pages/registration/registration.dart';
 import 'package:ecommerce_admin_tut/widgets/layout/layout.dart';
 
 import '../pages/home/home_page.dart';
-import '../pages/orders/orders_page.dart';
-import '../pages/products/products_page.dart';
+import '../pages/events/events_page.dart';
+import '../pages/activities/activities_page.dart';
 import '../pages/users/users_page.dart';
 import 'package:ecommerce_admin_tut/rounting/route_names.dart';
 import 'package:flutter/material.dart';
@@ -20,21 +20,23 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(HomePage());
     case UsersRoute:
       return _getPageRoute(UsersPage());
-    case ProductsRoute:
-      return _getPageRoute(ProductsPage());
-    case OrdersRoute:
-      return _getPageRoute(OrdersPage());
+    case ActivitiesRoute:
+      return _getPageRoute(ActivitiesPage());
+    case EventsRoute:
+      return _getPageRoute(EventsPage());
     case LoginRoute:
       return _getPageRoute(LoginPage());
     case RegistrationRoute:
       return _getPageRoute(RegistrationPage());
-          case LayoutRoute:
+    case LayoutRoute:
       return _getPageRoute(LayoutTemplate());
-                case CategoriesRoute:
-      return _getPageRoute(CategoriesPage());
-                case BrandsRoute:
-      return _getPageRoute(BrandsPage());
-                case PageControllerRoute:
+    case JobsRoute:
+      return _getPageRoute(JobsPage());
+    case ClassListsRoute:
+      return _getPageRoute(ClassListsPage());
+    case PaymentsRoute:
+      return _getPageRoute(PaymentsPage());
+    case PageControllerRoute:
       return _getPageRoute(AppPagesController());
     default:
       return _getPageRoute(LoginPage());

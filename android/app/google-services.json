@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "843661353909",
+    "firebase_url": "https://gonexus-3f8b1-default-rtdb.firebaseio.com",
+    "project_id": "gonexus-3f8b1",
+    "storage_bucket": "gonexus-3f8b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843661353909:android:76cbbd2fc85d08f421affc",
+        "android_client_info": {
+          "package_name": "com.flutter.goplutus.gonexus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843661353909-9i4fvjt5a5t67usmur31gs2dbftlpqip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutter.goplutus.gonexus",
+            "certificate_hash": "eda7a856148fda85aa00bb4692229f17bab7f9ef"
+          }
+        },
+        {
+          "client_id": "843661353909-eivdd0rkvccv94v5g6ebo3jrurq8q9ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0bpop006kvkBnluO8KWHBt9hE457jno0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843661353909-eivdd0rkvccv94v5g6ebo3jrurq8q9ip.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "843661353909-0m2l4coa8upjhrekrdsa6j53s2qkk6to.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutter.goplutus.gonexus"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
